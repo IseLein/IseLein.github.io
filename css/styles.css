@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    /* font-size: 16px; */
+    color: #3f4666;
+    background-color: #3f4666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#main-page {
+    height: 100%;
+}
+
+nav {
+    background-color: #3f4666;
+
+}
+
+#header-nav {
+    font-size: medium;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0;
+    border: 0;
+    list-style-type: none;
+}
+
+#my-brand {
+    font-size: 1.1em;
+}
+
+.nav-link {
+    color: #ffde59;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-image {
+    background-image: url("/images/home.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-text {
+    color: #ffde59;
+    font-size: 3.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+
+#name {
+    font-size: 1.3em;
+    font-family: "Lucida Handwriting", cursive;
+    margin: 0;
+}
+
+#bio {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text {
+        top: 40%;
+    }
+
+    #name {
+        font-size: xx-large;
+        font-family: "Lucida Handwriting", cursive;
+        margin: 0;
+    }
+    
+    #bio {
+        font-size: small;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
