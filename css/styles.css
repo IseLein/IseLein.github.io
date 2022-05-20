@@ -18,7 +18,6 @@ body {
 
 nav {
     background-color: #3f4666;
-
 }
 
 #header-nav {
@@ -44,7 +43,7 @@ nav {
 
 .hero-image {
     background-image: url("/images/home.png");
-    height: 100%;
+    height: 90%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,13 +71,113 @@ nav {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.main-body {
+    background-color: #dfe2f1;
+    width: 100%;
+    display: flex;
+}
+
+.spacer {
+    width: 50%;
+}
+
+.about-body {
+    display: flex;
+    align-items: center;
+}
+
+#avatar {
+    width: 30%;
+    margin: 5px;
+}
+
+.about-tag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+}
+
+.about-desc {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#avatar {
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.about-about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: justify;
+    border-left: solid #3f4666;
+}
+
+.icons {
+    height: 100%;
+    margin: 15px;
+    vertical-align: baseline;
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    color: #3f4666;
+    font-size: 2em;
+    margin: 5px;
+}
+
+em {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.resume-area {
+    align-items: center;
+    text-align: center;
+}
+
+.resume-button {
+    background-color: #dfe2f1;
+    border-radius: 15%;
+    border: solid #3f4666;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.resume-button a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #3f4666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a .project-img {
+    border-radius: 15%;
+    padding: 30px;
+}
+
+footer {
+    font-size: smaller;
+    color: #dfe2f1;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .spacer {
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .hero-text {
-        top: 40%;
+        top: 25%;
     }
 
     #name {
-        font-size: xx-large;
+        font-size: 1.07em;
         font-family: "Lucida Handwriting", cursive;
         margin: 0;
     }
@@ -86,5 +185,46 @@ nav {
     #bio {
         font-size: small;
         font-family: 'Courier New', Courier, monospace;
+    }
+
+    .spacer {
+        width: 20%;
+    }
+
+    .about-body {
+        display: block;
+    }
+
+    #avatar {
+        width: 80%;
+        margin: 5px;
+    }
+
+    .about-about {
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-bottom: 10px;
+        border-top: solid #3f4666;
+        border-left: none;
+    }
+
+    .socials {
+        width: 100%;
+    }
+
+    .icons {
+        flex-direction: row;
+        margin: 5px;
+        justify-content:center;
+    }
+
+    i {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    a .project-img {
+        width: 80%;
+        margin: 5px;
     }
 }
